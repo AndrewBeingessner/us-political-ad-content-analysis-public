@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gatc-scraper"
+version = "0.1.0"
+description = "Utilities and CLI entrypoints for scraping the Google Ads Transparency Center"
+requires-python = ">=3.10,<3.13"
+
+[tool.black]
+line-length = 140
+target-version = ["py312"]
+
+[tool.setuptools]
+package-dir = {"" = "scraper/src"}
+
+[tool.setuptools.packages.find]
+where = ["scraper/src"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py312"
+
+[tool.ruff.lint]
+# Keep the rule set modest so we don't introduce surprise errors.
+# You can always tighten later.
+select = ["E", "F", "I"]
+# (No deprecated top-level options here.)
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["scraper/tests"]
+pythonpath = ["scraper/src"]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = "scraper/src"
+packages = ["gatc_scraper"]
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_optional = true
+ignore_missing_imports = true

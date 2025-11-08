@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "role": "roles/bigquery.dataEditor",
+      "members": [
+        "serviceAccount:YOUR_SERVICE_ACCOUNT@YOUR_PROJECT.iam.gserviceaccount.com"
+      ]
+    }
+  ],
+  "etag": ""
+}

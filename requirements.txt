@@ -1,0 +1,14 @@
+# --- Core ---
+requests>=2.32.3,<3
+Pillow>=10,<11
+
+# --- Google Cloud clients used by the scrapers ---
+google-cloud-bigquery>=3.25.0
+google-cloud-storage>=2.18.2
+google-cloud-vision>=3.6.0
+
+# --- Postgres driver ---
+psycopg2-binary>=2.9.9,<3
+
+# --- Playwright (container/runtime dep) ---
+playwright==1.47.0

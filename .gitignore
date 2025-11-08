@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+
+# Editor/OS
+.DS_Store
+*.swp
+
+# Playwright / debug
+trace.zip
+media/debug/
+playwright-report/
+test-results/
+
+# Data & artifacts (keep dir, ignore contents)
+data/
+!data/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local junk
+.Rhistory
+docs/.Rhistory
+cloud-sql-proxy
+cloud_sql_proxy
+metadata.db
+*.egg-info/

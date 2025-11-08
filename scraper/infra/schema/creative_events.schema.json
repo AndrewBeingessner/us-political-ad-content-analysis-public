@@ -1,0 +1,11 @@
+[
+  {"name":"bucket","type":"STRING","mode":"REQUIRED"},
+  {"name":"name","type":"STRING","mode":"REQUIRED"},
+  {"name":"size","type":"INT64","mode":"NULLABLE"},
+  {"name":"generation","type":"STRING","mode":"NULLABLE"},
+  {"name":"event_type","type":"STRING","mode":"NULLABLE"},
+  {"name":"received_at","type":"TIMESTAMP","mode":"REQUIRED"},
+  {"name":"message_id","type":"STRING","mode":"NULLABLE"},
+  {"name":"attributes","type":"JSON","mode":"NULLABLE"},
+  {"name":"subscription","type":"STRING","mode":"NULLABLE"}
+]

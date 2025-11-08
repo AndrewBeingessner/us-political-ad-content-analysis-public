@@ -1,0 +1,9 @@
+# Linting/formatting
+ruff==0.6.9
+black==24.8.0
+pre-commit==3.8.0
+pytest==8.3.3
+mypy==1.11.2
+# (Optional type stubs if you want mypy later)
+types-requests
+types-Pillow
